@@ -1,0 +1,9 @@
+# Core (needed everywhere, including dry-run on a PC)
+openai>=1.40          # also used as the client for local Ollama (OpenAI-compatible)
+
+# Optional: only for --mode realtime (cloud low-latency audio)
+websockets>=12
+
+# On the robot's Jetson only — installed from source, NOT via this file:
+#   git clone https://github.com/unitreerobotics/unitree_sdk2_python
+#   cd unitree_sdk2_python && pip3 install -e .
